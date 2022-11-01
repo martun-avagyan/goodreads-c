@@ -1,0 +1,385 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --text-main: #333333;
+  --text-secondary: #00635d;
+  --background-secondary: #f9f8f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+@font-face {
+  font-family: Lato;
+  src: url(/assets/fonts/Lato.ttf);
+}
+@font-face {
+  font-family: Lato-Black;
+  src: url(/assets/fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: Lato-Bold;
+  src: url(/assets/fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: Lato-Light;
+  src: url(/assets/fonts/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: Lato-Thin;
+  src: url(/assets/fonts/Lato-Thin.ttf);
+}
+
+.container {
+  width: 100%;
+  max-width: 966px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  position: relative;
+  height: 370px;
+  background-position: center;
+  background-image: url('/assets/images/background-books.jpg');
+}
+
+.header-content {
+  position: relative;
+}
+
+.goodreads-header-img {
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.headline-img {
+  margin-top: 50px;
+  margin-left: 95px;
+}
+
+.main {
+  display: flex;
+}
+
+.left {
+  width: 100%;
+}
+
+.sign-in-container {
+  width: 300px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  position: absolute;
+  top: 100px;
+  right: 10px;
+}
+
+.social-button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.facebook {
+  background-color: #4e69a2;
+  border-color: #4e69a2;
+  color: white;
+}
+
+.facebook:hover {
+  background-color: #3b4f7d;
+  border-color: #3b4f7d;
+}
+
+.facebook img {
+  width: 21px;
+  height: 21px;
+  margin-right: 8px;
+}
+
+.amazon {
+  background-color: #f5d47a;
+  border-color: #d8d8d8;
+  color: #333333;
+}
+
+.amazon:hover {
+  background-color: #e9c664;
+  border-color: #d8d8d8;
+}
+
+.amazon img {
+  width: 21px;
+  height: 21px;
+  margin-right: 8px;
+}
+
+.apple {
+  background-color: #ffffff;
+  border-color: #d8d8d8;
+  color: #333333;
+}
+
+.apple img {
+  width: 28px;
+  height: 26px;
+  margin-right: 8px;
+}
+
+.email {
+  background-color: #382110;
+  color: white;
+  border-color: #382110;
+  padding: 10px;
+}
+
+.email:hover {
+  background-color: #58371f;
+  border-color: #2a1a0d;
+}
+
+.formatting-purposes {
+  /* height: 21px; */
+  width: 21px;
+}
+
+.disclaimer {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  color: #999999;
+  margin-top: 10px;
+}
+
+.disclaimer a {
+  color: #00635d;
+}
+
+.deciding-what-to-read {
+  display: flex;
+  width: 100%;
+}
+
+.header-hero {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.paragraph-hero {
+  font-family: Lato;
+  color: var(--text-main);
+  font-size: 14px;
+  line-height: 18px;
+  margin: 18px 0;
+}
+
+.article-hero {
+  /* width: 280px; */
+  padding-top: 15px;
+}
+
+.discover {
+  background-color: #f4f2e9;
+  border-radius: 10px;
+  padding: 15px 0 20px;
+}
+
+.read-discovered-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background-image: url('./assets/images/background-color.png');
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+.discover-heading {
+  font-family: Lato-Light;
+  font-size: 18px;
+  margin: 10px;
+}
+
+.discovery-small-heading {
+  font-family: Lato-Light;
+  font-size: 12px;
+  color: var(--text-main);
+  margin-bottom: 15px;
+}
+
+.book-icon-img {
+  height: 120px;
+  width: 80px;
+  margin-right: 12px;
+}
+
+.because-you-read {
+  display: flex;
+}
+
+.you-discovered {
+  display: flex;
+  align-items: top;
+}
+
+.sidetext-hero {
+  width: 110px;
+}
+
+.categories {
+  column-count: 4;
+}
+
+li {
+  list-style-type: none;
+}
+
+.category a,
+.quotes-categories a,
+.choice-awards-categories a {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #00635d;
+  cursor: pointer;
+  font-family: Lato;
+}
+
+.quotes-container {
+  display: flex;
+}
+
+.image-and-categories {
+  display: flex;
+}
+
+.choice-awards-categories {
+  column-count: 2;
+}
+
+.choice-awards-categories li {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 18px;
+}
+.sign-in {
+  width: 300px;
+  background-color: #00635d;
+}
+
+.right {
+  width: 100%;
+  margin: 163px 20px 0;
+}
+
+.right-bottom {
+}
+
+.right-bottom h3 {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.right-bottom p {
+  font-family: Lato;
+  font-size: 14px;
+  color: #181818;
+}
+
+.lists-small {
+}
+
+.small-books img {
+  height: 40px;
+}
+
+.lists-left-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebece7;
+}
+
+.small-books {
+}
+
+.lists-left a {
+  color: var(--text-secondary);
+  font-family: Lato;
+  font-size: 14px;
+}
+
+.lists-left p {
+  font-family: 'Lato';
+  font-size: 11px;
+  line-height: 14px;
+  color: #999;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 150px;
+  background: #f9f8f4;
+}
+
+.footer h3 {
+  font-weight: bold;
+  line-height: 1.15;
+  margin: 12px 0;
+  text-transform: uppercase;
+  color: #767676;
+  margin-bottom: 8px;
+}
+
+.footer a {
+  color: var(--text-main);
+  font-family: Lato;
+  font-size: 14px;
+}
+
+.footer-list {
+  line-height: 18px;
+}
+
+.footer-left-wrapper {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-connect ul {
+  display: flex;
+  margin: 10px 0 0 0;
+  gap: 8px;
+}
+
+.footer-apps ul {
+  display: flex;
+  gap: 3px;
+}
