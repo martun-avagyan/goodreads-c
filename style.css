@@ -16,10 +16,9 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p,
-span {
+h6 {
   text-decoration: none;
+  font-weight: 400;
 }
 
 a:hover {
@@ -27,7 +26,7 @@ a:hover {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -194,21 +193,24 @@ body {
 }
 
 .header-hero {
-  font-family: Lato;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
 
 .paragraph-hero {
-  font-family: Lato;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+
   color: var(--text-main);
   font-size: 14px;
   line-height: 18px;
   margin: 18px 0;
+  font-size: 14px;
 }
 
 .article-hero {
   padding-top: 15px;
+  flex: 1;
 }
 
 .discover {
@@ -228,13 +230,13 @@ body {
 }
 
 .discover-heading {
-  font-family: Lato-Light;
+  font-family: "Lato-Light", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 18px;
   margin: 10px;
 }
 
 .discovery-small-heading {
-  font-family: Lato-Light;
+  font-family: "Lato-Light", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 12px;
   color: var(--text-main);
   margin-bottom: 15px;
@@ -255,7 +257,27 @@ body {
   align-items: top;
 }
 
+.search-and-browse-header {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 26px;
+}
+
+.search-input {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  width: 300px;
+  border: 1px solid #999;
+  background-image: url(assets/images/MagnifyingGlassIcon.png);
+  background-repeat: no-repeat;
+  background-position: 280px 5px;
+}
+
 .side-text-hero {
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
   width: 110px;
 }
 
@@ -274,7 +296,7 @@ li {
   line-height: 1.8;
   color: #00635d;
   cursor: pointer;
-  font-family: Lato;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
 }
 
 .quotes-container {
@@ -290,7 +312,7 @@ li {
 }
 
 .choice-awards-categories li {
-  font-family: Lato;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
@@ -308,14 +330,14 @@ li {
 }
 
 .right-bottom h3 {
-  font-family: Lato;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
 .right-bottom p {
-  font-family: Lato;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 14px;
   color: #181818;
 }
@@ -343,7 +365,7 @@ li {
 }
 
 .lists-left p {
-  font-family: "Lato";
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 11px;
   line-height: 14px;
   color: #999;
@@ -367,7 +389,7 @@ li {
 
 .footer a {
   color: var(--text-main);
-  font-family: Lato;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 14px;
 }
 
