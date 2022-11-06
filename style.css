@@ -21,6 +21,10 @@ h6 {
   font-weight: 400;
 }
 
+li {
+  list-style: none;
+}
+
 a:hover {
   text-decoration: underline;
 }
@@ -50,6 +54,11 @@ body {
 @font-face {
   font-family: Lato-Thin;
   src: url(assets/fonts/Lato-Thin.ttf);
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url(assets/fonts/Merriweather-Regular.ttf);
 }
 
 .container {
@@ -90,6 +99,11 @@ body {
 }
 
 .sign-in-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 300px;
   padding: 24px;
   background: #ffffff;
@@ -98,6 +112,10 @@ body {
   position: absolute;
   top: 100px;
   right: 10px;
+}
+
+.sign-in-content {
+  margin-top: 30px;
 }
 
 .social-button {
@@ -113,14 +131,14 @@ body {
 }
 
 .facebook {
-  background-color: #4e69a2;
-  border-color: #4e69a2;
+  background-color: #3b5998;
+  border-color: #3b5998;
   color: white;
 }
 
 .facebook:hover {
-  background-color: #3b4f7d;
-  border-color: #3b4f7d;
+  background-color: #4e69a2;
+  border-color: #4e69a2;
 }
 
 .facebook img {
@@ -131,13 +149,12 @@ body {
 
 .amazon {
   background-color: #f5d47a;
-  border-color: #d8d8d8;
+  border: 1px solid #b38b22;
   color: #333333;
 }
 
 .amazon:hover {
-  background-color: #e9c664;
-  border-color: #d8d8d8;
+  background-color: #f8c15d;
 }
 
 .amazon img {
@@ -148,7 +165,8 @@ body {
 
 .apple {
   background-color: #ffffff;
-  border-color: #d8d8d8;
+  border: 1px solid black;
+  line-height: 2;
   color: #333333;
 }
 
@@ -160,19 +178,14 @@ body {
 
 .email {
   background-color: #382110;
+  border: 1px solid #382110;
   color: white;
-  border-color: #382110;
-  padding: 10px;
+  padding: 12px;
 }
 
 .email:hover {
   background-color: #58371f;
-  border-color: #2a1a0d;
-}
-
-.formatting-purposes {
-  /* height: 21px; */
-  width: 21px;
+  border: 1px solid #382110;
 }
 
 .disclaimer {
@@ -181,6 +194,8 @@ body {
   font-size: 12px;
   color: #999999;
   margin-top: 10px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d8d8d8;
 }
 
 .disclaimer a {
@@ -212,6 +227,8 @@ body {
   padding-top: 15px;
   flex: 1;
 }
+
+/* Discover Section */
 
 .discover {
   background-color: #f4f2e9;
@@ -257,6 +274,8 @@ body {
   align-items: top;
 }
 
+/* Search And Browse */
+
 .search-and-browse-header {
   font-size: 18px;
   font-weight: 400;
@@ -265,6 +284,7 @@ body {
 
 .search-input {
   padding: 5px;
+  margin: 10px 0;
   border-radius: 5px;
   background-color: white;
   width: 300px;
@@ -285,25 +305,43 @@ body {
   column-count: 4;
 }
 
-li {
-  list-style-type: none;
-}
-
 .category a,
 .quotes-categories a,
 .choice-awards-categories a {
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 1.5;
   color: #00635d;
   cursor: pointer;
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+/* Quotes Section */
+
+.quotes {
+  margin-top: 30px;
 }
 
 .quotes-container {
   display: flex;
 }
 
+.quote-container {
+  display: flex;
+}
+
+.the-quote {
+  font-family: "Merriweather", "Georgia", serif;
+  font-size: 14px;
+  margin: 0px 15px 10px 0px;
+  line-height: 21px;
+}
+
+/* Choice Awards */
+
 .image-and-categories {
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   display: flex;
 }
 
@@ -314,8 +352,11 @@ li {
 .choice-awards-categories li {
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 2.2;
 }
+
+/* Sign In  */
+
 .sign-in {
   width: 300px;
   background-color: #00635d;
