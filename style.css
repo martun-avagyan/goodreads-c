@@ -7,7 +7,9 @@
 :root {
   --text-main: #333333;
   --text-secondary: #00635d;
+  --text-tertiary: #382110;
   --background-secondary: #f9f8f4;
+  --font-main: "Lato", sans-serif;
 }
 
 a,
@@ -36,7 +38,7 @@ body {
 }
 @font-face {
   font-family: Lato;
-  src: url(assets/fonts/Lato.ttf);
+  src: url(assets/fonts/Lato-Regular.ttf);
 }
 @font-face {
   font-family: Lato-Black;
@@ -61,12 +63,21 @@ body {
   src: url(assets/fonts/Merriweather-Regular.ttf);
 }
 
+@font-face {
+  font-family: Merriweather-Bold;
+  src: url(assets/fonts/Merriweather-Bold.ttf);
+}
+
 .container {
   width: 100%;
   max-width: 966px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.header-img-m {
+  display: none;
 }
 
 .header {
@@ -364,7 +375,7 @@ body {
 
 .right {
   width: 100%;
-  margin: 163px 20px 0;
+  margin: 220px 20px 0;
 }
 
 .right-bottom {
@@ -452,4 +463,131 @@ body {
 .footer-apps ul {
   display: flex;
   gap: 3px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 414px) {
+  body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-main);
+  }
+  .header {
+    height: auto;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .header {
+    background-image: none;
+  }
+
+  .header-img-m {
+    display: block;
+    width: 100%;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-image: url(assets/imgMobile/topHeader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .search-goodreads-sign-up-m {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    width: 100%;
+    background-color: #f4f1ea;
+    font-size: 0;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .sign-up-m {
+    background-color: #382110;
+    border: 1px solid #382110;
+    color: white;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-family: Lato, sans-serif;
+  }
+
+  .sign-up-m:hover {
+    background-color: #58371f;
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+
+  .header-logo-m {
+    height: 30px;
+  }
+
+  .goodreads-img-m {
+    padding: 20px 0;
+  }
+
+  .navbar-m {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f1ea;
+    color: var();
+  }
+  .navbar-m div {
+    padding: 15px 15px;
+    font-family: var(--font-main);
+    color: var(--text-tertiary);
+  }
+
+  .navbar-m div:hover {
+    background-color: #382110;
+    color: white;
+  }
+
+  .sign-in-container {
+    position: static;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .sign-in-container h1 {
+    font-family: Merriweather-Bold, serif;
+    font-size: 22px;
+    line-height: 27.5px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .sign-in-container p {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+  }
+
+  .disclaimer {
+    color: black;
+  }
+  .right {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
 }
