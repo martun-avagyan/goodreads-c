@@ -491,7 +491,11 @@ body {
   .header {
     background-image: none;
   }
-
+  .header-m {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+  }
   .header-img-m {
     display: block;
     width: 100%;
@@ -545,12 +549,13 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #f4f1ea;
-    color: var();
+    color: var(--text-tertiary);
   }
   .navbar-m div {
     padding: 15px 15px;
     font-family: var(--font-main);
     color: var(--text-tertiary);
+    margin-top: 90px;
   }
 
   .navbar-m div:hover {
@@ -561,7 +566,7 @@ body {
   .sign-in-container {
     position: static;
     width: 100%;
-    margin: 0;
+    margin: 60px 0 0 0;
     padding: 0;
     border: none;
   }
@@ -583,11 +588,104 @@ body {
 
   .disclaimer {
     color: black;
+    border: none;
+  }
+
+  .search-input {
+    background-image: url(assets/imgMobile/search.svg);
+    background-position: 4px 2px;
+    width: 100%;
+  }
+
+  h3 {
+    color: #333333;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.15;
+    margin: 12px 0;
+    text-transform: uppercase;
+  }
+  .images-most-read-m img {
+    height: 200px;
+  }
+  .images-most-read-m {
+    max-width: 410px;
+    display: flex;
+    max-width: 500px;
+    gap: 20px;
+    overflow: hidden;
+  }
+  ul {
+    line-height: 1.8;
+  }
+  .list-best-books-m {
+    columns: 2;
+  }
+
+  .genres-m {
+    margin-top: 20px;
+  }
+
+  .genres-header-m {
+    width: 10000px;
+  }
+
+  .list-best-books-m a,
+  .genres-m a,
+  .choice-awards-w-m {
+    color: #00635d;
+    text-decoration: none;
+  }
+
+  .images-and-lists-m a:hover,
+  .genres-m a:hover,
+  .choice-awards-w-m:hover {
+    text-decoration: underline;
+  }
+  .choice-awards-w-m {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .choice-awards-img-m {
+    width: 100%;
+  }
+  .genres-m ul {
+    column-count: 2;
+  }
+
+  .quotes-container {
+    display: block;
+  }
+
+  .quotes-container ul {
+    columns: 2;
   }
   .right {
     display: none;
   }
+
   .footer {
-    display: none;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .footer-left-wrapper div {
+    margin-bottom: 20px;
+  }
+
+  .footer-left-wrapper {
+    display: block;
+  }
+
+  .footer-connect ul {
+    column-count: 2;
+    margin-bottom: 20px;
+  }
+
+  .footer-apps ul {
+    margin-top: 20px;
+    display: block;
   }
 }

@@ -22,7 +22,7 @@
           </div>
           <div>
             <img
-              class="header-logo-m cursor"
+              class="header-logo-m mobile cursor"
               src="assets/images/header-logo.png"
               alt="Logo"
             />
@@ -186,15 +186,102 @@
           </div>
         </section>
         <section class="search-and-categories">
-          <h3 class="search-and-browse-header">Search and browse books</h3>
+          <h3 class="search-and-browse-header desktop">
+            Search and browse books
+          </h3>
           <div class="search-container">
             <input
               class="search-input"
-              placeholder="Title / Author/ ISBN"
+              placeholder="Search Books And Authors"
               type="text"
             />
           </div>
-          <ul class="categories">
+          <section class="mobile images-and-lists-m">
+            <div>
+              <h3>MOST READ THIS WEEK</h3>
+              <div class="images-most-read-m mobile">
+                <div>
+                  <img src="assets/imgMobile/book1.jpg" alt="A book cover" />
+                </div>
+                <div>
+                  <img
+                    src="assets/imgMobile/book2.jpg"
+                    alt="Another Book Cover"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="assets/imgMobile/book2_5.jpg "
+                    alt="Yet Another Book"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h3>NEW RELEASES THIS MONTH</h3>
+                <div class="images-most-read-m mobile">
+                  <div>
+                    <img src="assets/imgMobile/book1.jpg" alt="A book cover" />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/imgMobile/book2.jpg"
+                      alt="Another Book Cover"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/imgMobile/book2_5.jpg "
+                      alt="Yet Another Book"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3>LISTS</h3>
+                <div class="images-most-read-m mobile">
+                  <div>
+                    <img src="assets/imgMobile/book1.jpg" alt="A book cover" />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/imgMobile/book2.jpg"
+                      alt="Another Book Cover"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/imgMobile/book2_5.jpg "
+                      alt="Yet Another Book"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="mobile list-best-books-m">
+              <li>
+                <a href="#">Fiction Book Lists</a>
+              </li>
+              <li>
+                <a href="#">Best Audiobooks ever</a>
+              </li>
+              <li>
+                <a href="#">Best Childrens Books Lists</a>
+              </li>
+              <li>
+                <a href="#">Best Novels Of All Time</a>
+              </li>
+              <li>
+                <a href="#">Romance Book Lists</a>
+              </li>
+              <li>
+                <a href="#">See More Lists</a>
+              </li>
+            </ul>
+          </section>
+
+          <ul class="categories desktop">
             <li class="category"><a href="#">Art</a></li>
             <li class="category"><a href="#">Biography</a></li>
             <li class="category"><a href="#">Business</a></li>
@@ -226,6 +313,26 @@
             <li class="category"><a href="#">Young Adult</a></li>
             <li class="category"><a href="#">More Genres</a></li>
           </ul>
+        </section>
+
+        <section class="mobile genres-m">
+          <div genres-header-m>
+            <h3>Genres</h3>
+          </div>
+          <div>
+            <ul>
+              <li><a href="">Fiction</a></li>
+              <li><a href="">Ebook</a></li>
+              <li><a href="">Comics</a></li>
+              <li><a href="">Christian</a></li>
+              <li><a href="">CookBooks</a></li>
+              <li><a href="">Childrens</a></li>
+              <li><a href="">Memoir</a></li>
+              <li><a href="">Young Adult</a></li>
+              <li><a href="">NonFiction</a></li>
+              <li><a href="">More Genres</a></li>
+            </ul>
+          </div>
         </section>
 
         <!-- Quotes Section -->
@@ -272,12 +379,18 @@
           <div class="image-and-categories">
             <div>
               <img
+                class="mobile choice-awards-img-m"
+                src="assets/imgMobile/choiceAwards.png"
+                alt="Choice Awards"
+              />
+              <a class="choice-awards-w-m mobile" href="#">See The Winner</a>
+              <img
                 src="assets/images/choice-awards-2021.png"
                 alt="Choice Awards"
-                class="choice-awards"
+                class="choice-awards desktop"
               />
             </div>
-            <div class="choice-awards-categories">
+            <div class="choice-awards-categories desktop">
               <ul>
                 <li>
                   <a href="#" class="choice-awards-category">Best Fiction</a>
@@ -352,7 +465,7 @@
           <ul></ul>
         </div>
       </div>
-      <div class="right">
+      <div class="right desktop">
         <div>
           <h4>The 60 Most Popular Horror Books of the Past Five Years</h4>
           <img src="assets/images/stephenking.jpg" alt="Stephen Kings Book" />
@@ -475,7 +588,8 @@
           </li>
         </ul>
         <p>© 2022 Goodreads, Inc.</p>
-        <a href="#">Mobile Version</a>
+        <a class="desktop" href="#">Mobile Version</a>
+        <a class="mobile" href="#">Desktop Version</a>
       </div>
     </footer>
   </body>
