@@ -533,8 +533,19 @@ body {
   display: none;
 }
 
-@media (max-width: 414px) {
-}
+/* @media (max-width: 910px) {
+  .header-img-m {
+    display: block;
+    width: 100%;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-image: url(assets/imgMobile/topHeader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+} */
 
 @media (max-width: 970px) {
   body {
@@ -569,7 +580,7 @@ body {
     display: block;
     width: 100%;
     height: 40px;
-    background-image: url(assets/imgMobile/topHeader.jpg);
+    background-image: url(assets/tablet/tablettop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -617,19 +628,25 @@ body {
   }
 
   .navbar-m {
+    background-color: #f4f1ea;
+  }
+
+  .navbar-cont {
     display: flex;
     justify-content: space-between;
-    background-color: #f4f1ea;
     color: var(--text-tertiary);
+    margin: 0 auto;
+    max-width: 610px;
   }
-  .navbar-m div {
+
+  .navbar-cont div {
     padding: 15px 15px;
     font-family: var(--font-main);
     color: var(--text-tertiary);
     margin-top: 90px;
   }
 
-  .navbar-m div:hover {
+  .navbar-cont div:hover {
     background-color: #382110;
     color: white;
   }
@@ -796,4 +813,22 @@ body {
     margin-top: 20px;
     display: block;
   } */
+}
+
+@media (max-width: 750px) {
+  .tablet {
+    display: none;
+  }
+
+  .header-img-m {
+    display: block;
+    width: 100%;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-image: url(assets/imgMobile/topHeader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
