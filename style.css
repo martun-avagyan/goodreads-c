@@ -134,7 +134,7 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 8px 12px;
+  padding: 10px 12px;
   margin-bottom: 14px;
   cursor: pointer;
   border-radius: 3px;
@@ -318,7 +318,8 @@ body {
 
 .category a,
 .quotes-categories a,
-.choice-awards-categories a {
+.choice-awards-categories a,
+.more-books-url a {
   font-size: 14px;
   line-height: 1.5;
   color: #00635d;
@@ -378,7 +379,29 @@ body {
   margin: 220px 20px 0;
 }
 
-.right-bottom {
+.already-member {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+  color: #382110;
+}
+
+.already-member a {
+  color: #00635d;
+}
+
+.right-heading {
+  font-family: "Merriweather", "Georgia", serif;
+  font-weight: bold;
+  margin: 16px 0;
+  color: #00635d;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.right-heading:hover {
+  text-decoration: underline;
 }
 
 .right-bottom h3 {
@@ -393,6 +416,7 @@ body {
   font-size: 14px;
   color: #181818;
 }
+
 .right-bottom-button {
   color: #333333;
   font-size: 11px;
@@ -405,8 +429,16 @@ body {
 .lists-small {
 }
 
+.lists-heading {
+  margin-top: 20px;
+}
+
 .small-books img {
   height: 40px;
+}
+
+.more-books-url {
+  margin: 20px 0;
 }
 
 .lists-left-container {
