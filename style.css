@@ -534,6 +534,9 @@ body {
 }
 
 @media (max-width: 414px) {
+}
+
+@media (max-width: 970px) {
   body {
     box-sizing: border-box;
     padding: 0;
@@ -582,6 +585,8 @@ body {
     font-size: 0;
     font-size: 14px;
     font-weight: 400;
+    /* max-width: 410px; */
+    margin: 0 auto;
   }
 
   .sign-up-m {
@@ -591,6 +596,8 @@ body {
     border-radius: 3px;
     padding: 8px 12px;
     font-family: Lato, sans-serif;
+    max-width: 410px;
+    margin: 0 auto;
   }
 
   .sign-up-m:hover {
@@ -633,6 +640,8 @@ body {
     margin: 60px 0 0 0;
     padding: 0;
     border: none;
+    max-width: 410px;
+    margin: 0 auto;
   }
 
   .sign-in-container h1 {
@@ -659,6 +668,14 @@ body {
     background-image: url(assets/imgMobile/search.svg);
     background-position: 4px 2px;
     width: 100%;
+    padding-left: 40px;
+    max-width: 410px;
+    margin: 0 auto;
+  }
+
+  .search-container {
+    max-width: 410px;
+    margin: 0 auto;
   }
 
   h3 {
@@ -670,8 +687,17 @@ body {
     margin: 12px 0;
     text-transform: uppercase;
   }
+
+  .social-button {
+    max-width: 398px;
+  }
   .images-most-read-m img {
     height: 200px;
+  }
+
+  .images-and-lists-m {
+    max-width: 410px;
+    margin: 0 auto;
   }
   .images-most-read-m {
     max-width: 410px;
@@ -715,12 +741,25 @@ body {
   .choice-awards-img-m {
     width: 100%;
   }
+
+  .genres-m {
+    max-width: 410px;
+    margin: 0 auto;
+  }
+
   .genres-m ul {
     column-count: 2;
   }
 
+  .quotes {
+    max-width: 410px;
+    margin: 0 auto;
+  }
+
   .quotes-container {
     display: block;
+    margin: 0 auto;
+    max-width: 410px;
   }
 
   .quotes-container ul {
@@ -730,7 +769,12 @@ body {
     display: none;
   }
 
-  .footer {
+  .choice-awards-m {
+    max-width: 410px;
+    margin: 0 auto;
+  }
+
+  /* .footer {
     margin: 0;
     padding: 0 10px;
   }
@@ -751,5 +795,5 @@ body {
   .footer-apps ul {
     margin-top: 20px;
     display: block;
-  }
+  } */
 }
