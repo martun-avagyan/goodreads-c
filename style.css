@@ -9,20 +9,8 @@
   --text-secondary: #00635d;
   --text-tertiary: #382110;
   --background-secondary: #f9f8f4;
-  --font-main: "Lato", sans-serif;
+  --font-main: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
 }
-
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-decoration: none;
-  font-weight: 400;
-}
-
 li {
   list-style: none;
 }
@@ -32,9 +20,8 @@ a:hover {
 }
 
 body {
-  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: var(--font-main);
   font-size: 16px;
-  line-height: 1.5;
 }
 @font-face {
   font-family: Lato;
@@ -72,8 +59,7 @@ body {
   width: 100%;
   max-width: 966px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0 15px;
 }
 
 .header-img-m {
@@ -97,8 +83,8 @@ body {
 }
 
 .headline-img {
-  margin-top: 50px;
-  margin-left: 95px;
+  margin-top: 70px;
+  margin-left: 93px;
 }
 
 .main {
@@ -112,17 +98,19 @@ body {
 .sign-in-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  width: 300px;
+  max-width: 300px;
   padding: 24px;
   background: #ffffff;
   border: 1px solid #d8d8d8;
   border-radius: 10px;
   position: absolute;
-  top: 100px;
-  right: 10px;
+  top: 98px;
+  right: 19px;
+}
+
+.sign-in-header {
+  font-size: 18px;
 }
 
 .sign-in-content {
@@ -134,7 +122,7 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 10px 12px;
+  padding: 11.5px 12px;
   margin-bottom: 14px;
   cursor: pointer;
   border-radius: 3px;
@@ -143,7 +131,7 @@ body {
 
 .facebook {
   background-color: #3b5998;
-  border-color: #3b5998;
+  border: 1px solid #3b5998;
   color: white;
 }
 
@@ -177,35 +165,33 @@ body {
 .apple {
   background-color: #ffffff;
   border: 1px solid black;
-  line-height: 2;
   color: #333333;
+  padding: 6px 0;
 }
 
 .apple img {
-  width: 28px;
-  height: 26px;
-  margin-right: 8px;
+  width: 32px;
+  margin-right: 6px;
 }
 
 .email {
   background-color: #382110;
   border: 1px solid #382110;
   color: white;
-  padding: 12px;
+  padding: 13.2px 0;
 }
 
 .email:hover {
   background-color: #58371f;
-  border: 1px solid #382110;
 }
 
 .disclaimer {
   text-align: center;
-  padding: 10px;
+  padding: 4px 4px 22px 4px;
   font-size: 12px;
   color: #999999;
   margin-top: 10px;
-  padding-bottom: 40px;
+  line-height: 18px;
   border-bottom: 1px solid #d8d8d8;
 }
 
@@ -213,9 +199,11 @@ body {
   color: #00635d;
 }
 
+.already-member {
+  margin-top: 24px;
+}
 .deciding-what-to-read {
   display: flex;
-  width: 100%;
 }
 
 .header-hero {
@@ -226,7 +214,6 @@ body {
 
 .paragraph-hero {
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
-
   color: var(--text-main);
   font-size: 14px;
   line-height: 18px;
@@ -234,40 +221,54 @@ body {
   font-size: 14px;
 }
 
-.article-hero {
+.article-hero-l,
+.article-hero-r {
+  line-height: 18px;
   padding-top: 15px;
   flex: 1;
+}
+
+.article-hero-l {
+  max-width: 280px;
+}
+.article-hero-r {
+  max-width: 280px;
+  margin-left: 29px;
 }
 
 /* Discover Section */
 
 .discover {
+  margin-top: 30px;
+  margin-left: 14px;
   background-color: #f4f2e9;
   border-radius: 10px;
-  padding: 15px 0 20px;
+  padding: 2px 0px 0px 0px;
 }
 
 .read-discovered-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
+  padding: 1px 19px 14px 11px;
   background-image: url("assets/images/background-color.png");
   background-repeat: repeat-x;
   background-position: bottom;
 }
-
+.discover-top {
+  margin-bottom: 20px;
+}
 .discover-heading {
-  font-family: "Lato-Light", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: var(--font-main);
   font-size: 18px;
   margin: 10px;
 }
 
 .discovery-small-heading {
-  font-family: "Lato-Light", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 12px;
   color: var(--text-main);
-  margin-bottom: 15px;
+  margin-bottom: 28px;
 }
 
 .book-icon-img {
@@ -280,9 +281,16 @@ body {
   display: flex;
 }
 
+.img-arrow {
+  margin: 35px 0 0 0;
+}
+
 .you-discovered {
   display: flex;
-  align-items: top;
+}
+
+.read-discovered-container.other {
+  padding-top: 20px;
 }
 
 /* Search And Browse */
@@ -404,7 +412,7 @@ body {
   text-decoration: underline;
 }
 
-.right-bottom h3 {
+.are-you-an-author {
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -472,7 +480,7 @@ body {
   max-width: 1220px;
 }
 
-.footer h3 {
+.footer-company {
   font-weight: bold;
   line-height: 1.15;
   margin: 12px 0;
@@ -661,7 +669,7 @@ body {
     margin: 0 auto;
   }
 
-  .sign-in-container h1 {
+  .sign-in-heading {
     font-family: Merriweather-Bold, serif;
     font-size: 22px;
     line-height: 27.5px;
@@ -695,7 +703,7 @@ body {
     margin: 0 auto;
   }
 
-  h3 {
+  /* h3 {
     color: #333333;
     font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
     font-size: 14px;
@@ -703,7 +711,7 @@ body {
     line-height: 1.15;
     margin: 12px 0;
     text-transform: uppercase;
-  }
+  } */
 
   .social-button {
     max-width: 398px;
