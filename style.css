@@ -19,6 +19,10 @@ a:hover {
   text-decoration: underline;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: var(--font-main);
   font-size: 16px;
@@ -239,7 +243,7 @@ body {
 /* Discover Section */
 
 .discover {
-  margin-top: 30px;
+  margin-top: 8px;
   margin-left: 14px;
   background-color: #f4f2e9;
   border-radius: 10px;
@@ -281,6 +285,10 @@ body {
   display: flex;
 }
 
+.read-discovered-container.other {
+  padding-top: 20px;
+}
+
 .img-arrow {
   margin: 35px 0 0 0;
 }
@@ -289,24 +297,21 @@ body {
   display: flex;
 }
 
-.read-discovered-container.other {
-  padding-top: 20px;
-}
-
 /* Search And Browse */
 
 .search-and-browse-header {
   font-size: 18px;
   font-weight: 400;
-  margin-top: 26px;
+  margin-top: 38px;
+  margin-left: 14px;
 }
 
 .search-input {
   padding: 5px;
-  margin: 10px 0;
+  margin: 14px 10px;
   border-radius: 5px;
   background-color: white;
-  width: 300px;
+  width: 310px;
   border: 1px solid #999;
   background-image: url(assets/images/MagnifyingGlassIcon.png);
   background-repeat: no-repeat;
@@ -324,12 +329,20 @@ body {
   column-count: 4;
 }
 
+/* .category a, */
+
+.category a {
+  font-size: 14px;
+  line-height: 1.3;
+  color: #00635d;
+  cursor: pointer;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
 .category a,
 .quotes-categories a,
 .choice-awards-categories a,
 .more-books-url a {
   font-size: 14px;
-  line-height: 1.5;
   color: #00635d;
   cursor: pointer;
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
@@ -339,6 +352,12 @@ body {
 
 .quotes {
   margin-top: 30px;
+}
+
+.quotes > div {
+  font-size: 18px;
+  line-height: 18px;
+  padding-bottom: 10px;
 }
 
 .quotes-container {
@@ -352,27 +371,39 @@ body {
 .the-quote {
   font-family: "Merriweather", "Georgia", serif;
   font-size: 14px;
-  margin: 0px 15px 10px 0px;
+  margin: 0px 0px 10px 0px;
   line-height: 21px;
+  max-width: 400px;
+}
+
+.quotes-categories a {
+  line-height: 1.5;
 }
 
 /* Choice Awards */
-
-.image-and-categories {
-  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 14px;
+.choice-awards-container {
+  margin-top: 14px;
+  margin-left: 12px;
   line-height: 18px;
+}
+
+.choice-heading {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.image-and-categories {
   display: flex;
 }
 
 .choice-awards-categories {
+  margin-left: 16px;
   column-count: 2;
+  transform: translate(0, -13px);
 }
 
 .choice-awards-categories li {
-  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 14px;
-  line-height: 2.2;
+  line-height: 2.1;
 }
 
 /* Sign In  */
@@ -383,8 +414,13 @@ body {
 }
 
 .right {
+  margin: 190px 20px 0;
+  max-width: 300px;
   width: 100%;
-  margin: 220px 20px 0;
+}
+
+.right-main-img {
+  width: 300px;
 }
 
 .already-member {
@@ -406,6 +442,12 @@ body {
   text-decoration: none;
   font-size: 12px;
   cursor: pointer;
+}
+
+.right-sp {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  font-size: 12px;
 }
 
 .right-heading:hover {
@@ -435,10 +477,13 @@ body {
   background-color: #f4f1ea;
 }
 .lists-small {
+  display: flex;
+  margin-bottom: 6px;
 }
 
 .lists-heading {
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .small-books img {
@@ -451,8 +496,10 @@ body {
 
 .lists-left-container {
   display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid #ebece7;
+  gap: 6px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .lists-left a {
@@ -468,7 +515,13 @@ body {
   color: #999;
 }
 
+.right-buttons {
+  margin-top: 28px;
+  margin-left: 66px;
+}
+
 .footer {
+  margin-top: 53px;
   padding: 32px;
   background: #f9f8f4;
 }
@@ -477,13 +530,12 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  padding-left: 14px;
   max-width: 1220px;
 }
 
-.footer-company {
+.foot-head {
   font-weight: bold;
-  line-height: 1.15;
-  margin: 12px 0;
   text-transform: uppercase;
   color: #767676;
   margin-bottom: 8px;
@@ -501,7 +553,7 @@ body {
 
 .footer-left-wrapper {
   display: flex;
-  gap: 60px;
+  gap: 88px;
 }
 
 .footer-connect ul {
@@ -675,9 +727,11 @@ body {
     line-height: 27.5px;
     font-weight: 700;
     margin-bottom: 10px;
+    margin-top: 60px;
   }
 
   .sign-in-container p {
+    text-align: center;
     font-family: Lato;
     font-size: 14px;
     line-height: 19px;
@@ -703,16 +757,6 @@ body {
     margin: 0 auto;
   }
 
-  /* h3 {
-    color: #333333;
-    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.15;
-    margin: 12px 0;
-    text-transform: uppercase;
-  } */
-
   .social-button {
     max-width: 398px;
   }
@@ -724,6 +768,9 @@ body {
     max-width: 410px;
     margin: 0 auto;
   }
+
+  /* AAAAAAAA */
+
   .images-most-read-m {
     max-width: 410px;
     display: flex;
@@ -798,29 +845,6 @@ body {
     max-width: 410px;
     margin: 0 auto;
   }
-
-  /* .footer {
-    margin: 0;
-    padding: 0 10px;
-  }
-
-  .footer-left-wrapper div {
-    margin-bottom: 20px;
-  }
-
-  .footer-left-wrapper {
-    display: block;
-  }
-
-  .footer-connect ul {
-    column-count: 2;
-    margin-bottom: 20px;
-  }
-
-  .footer-apps ul {
-    margin-top: 20px;
-    display: block;
-  } */
 }
 
 @media (max-width: 750px) {
