@@ -244,7 +244,6 @@ body {
 
 .discover {
   margin-top: 8px;
-  margin-left: 14px;
   background-color: #f4f2e9;
   border-radius: 10px;
   padding: 2px 0px 0px 0px;
@@ -593,20 +592,6 @@ body {
   display: none;
 }
 
-/* @media (max-width: 910px) {
-  .header-img-m {
-    display: block;
-    width: 100%;
-    display: block;
-    width: 100%;
-    height: 40px;
-    background-image: url(assets/imgMobile/topHeader.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-} */
-
 @media (max-width: 970px) {
   body {
     box-sizing: border-box;
@@ -614,6 +599,7 @@ body {
     margin: 0;
     font-family: var(--font-main);
   }
+
   .header {
     height: auto;
   }
@@ -646,20 +632,14 @@ body {
     background-size: cover;
   }
 
-  .search-goodreads-sign-up-m {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 18px;
-    width: 100%;
+  .email {
+    border: 1px solid #d6d0c4;
     background-color: #f4f1ea;
-    font-size: 0;
-    font-size: 14px;
-    font-weight: 400;
-    /* max-width: 410px; */
-    margin: 0 auto;
+    color: #333333;
   }
-
+  .email:hover {
+    background-color: #ede6d6;
+  }
   .sign-up-m {
     background-color: #382110;
     border: 1px solid #382110;
@@ -668,6 +648,7 @@ body {
     padding: 8px 12px;
     font-family: Lato, sans-serif;
     max-width: 410px;
+    padding: 0 6px;
     margin: 0 auto;
   }
 
@@ -677,6 +658,36 @@ body {
 
   .cursor {
     cursor: pointer;
+  }
+
+  .tablet-search {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    gap: 20px;
+  }
+.tabl-but{
+  width: 100%;
+}
+  .tabl-but:hover {
+    width: 100%;
+    background-color: #ede6d6;
+  }
+
+  }
+  .tablet-search input {
+    min-width: 350px;
+    width: 100%;
+    border: 1px solid #d6d0c4;
+    flex-grow: 1;
+    color: #333333;
+    padding: 8px 12px;
+
+    border-radius: 10px;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
   }
 
   .header-logo-m {
@@ -701,9 +712,11 @@ body {
 
   .navbar-cont div {
     padding: 15px 15px;
+    width: 30%;
     font-family: var(--font-main);
     color: var(--text-tertiary);
     margin-top: 90px;
+    word-wrap: unset;
   }
 
   .navbar-cont div:hover {
@@ -718,6 +731,7 @@ body {
     padding: 0;
     border: none;
     max-width: 410px;
+    padding: 0 6px;
     margin: 0 auto;
   }
 
@@ -741,6 +755,7 @@ body {
   .disclaimer {
     color: black;
     border: none;
+    padding: 0;
   }
 
   .search-input {
@@ -749,48 +764,91 @@ body {
     width: 100%;
     padding-left: 40px;
     max-width: 410px;
-    margin: 0 auto;
+    padding: 0 6px;
+    margin: 30 auto;
   }
 
   .search-container {
     max-width: 410px;
+    padding: 0 6px;
     margin: 0 auto;
+  }
+
+  .best-b-1 {
+    display: flex;
+    justify-content: space-between;
+    color: #181818;
+    font-family: "Merriweather", Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .best-b-2 {
+    color: #999999;
+    font-family: "Lato";
+    margin-bottom: 30px;
+  }
+
+  .mob-img-head {
+    margin: 18px 0;
+    font-size: 14px;
+    font-weight: 1;
   }
 
   .social-button {
     max-width: 398px;
   }
+
   .images-most-read-m img {
     height: 200px;
   }
 
   .images-and-lists-m {
     max-width: 410px;
+    padding: 0 6px;
     margin: 0 auto;
   }
 
-  /* AAAAAAAA */
-
   .images-most-read-m {
     max-width: 410px;
+    padding: 0 6px;
     display: flex;
     max-width: 500px;
     gap: 20px;
     overflow: hidden;
   }
-  ul {
-    line-height: 1.8;
-  }
+
   .list-best-books-m {
+    font-size: 14px;
+    line-height: 30px;
     columns: 2;
+  }
+
+  .search-container {
+    margin-top: 30px;
+  }
+
+  .already-member {
+    margin-bottom: "30px";
   }
 
   .genres-m {
     margin-top: 20px;
+    line-height: 30px;
   }
 
-  .genres-header-m {
-    width: 10000px;
+  .mob-img-head2 {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .quote-by {
+    width: 30px;
+  }
+
+  .the-quote::first-letter {
+    font-size: 26px;
   }
 
   .list-best-books-m a,
@@ -816,6 +874,7 @@ body {
 
   .genres-m {
     max-width: 410px;
+    padding: 0 6px;
     margin: 0 auto;
   }
 
@@ -825,17 +884,30 @@ body {
 
   .quotes {
     max-width: 410px;
-    margin: 0 auto;
+    padding: 0 6px;
+    margin: 20px auto 0 auto;
+  }
+
+  .the-quote {
+    font-size: 14px;
+    font-family: Merriweather;
+  }
+
+  .quote-author {
+    margin-bottom: 20px;
+    font-size: 14px;
   }
 
   .quotes-container {
     display: block;
     margin: 0 auto;
     max-width: 410px;
+    padding: 0 6px;
   }
 
   .quotes-container ul {
     columns: 2;
+    line-height: 30px;
   }
   .right {
     display: none;
@@ -843,7 +915,12 @@ body {
 
   .choice-awards-m {
     max-width: 410px;
+    padding: 0 6px;
     margin: 0 auto;
+  }
+
+  .tablet {
+    display: none;
   }
 }
 
@@ -851,6 +928,41 @@ body {
   .tablet {
     display: none;
   }
+
+  .only-tablet {
+    display: none;
+  }
+
+  .sign-up-m {
+    background-color: #382110;
+    border: 1px solid #382110;
+    color: white;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-family: Lato, sans-serif;
+    max-width: 410px;
+    padding: 8px 16px;
+    margin: 0 auto;
+  }
+
+  .sign-up-m:hover {
+    background-color: #58371f;
+  }
+
+  .search-goodreads-sign-up-m {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    width: 100%;
+    background-color: #f4f1ea;
+    font-size: 0;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 auto;
+  }
+
+  /* AAAAAAAA */
 
   .header-img-m {
     display: block;

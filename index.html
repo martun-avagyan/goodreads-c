@@ -10,11 +10,38 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-t tablet"></div>
+      <div class="header-t"></div>
 
       <div class="header-m mobile">
         <div class="header-img-m mobile cursor"></div>
-        <div class="search-goodreads-sign-up-m mobile">
+
+        <div class="tablet-search only-tablet">
+         
+          <div>
+            <img
+            class="header-logo-m mobile cursor"
+            src="assets/images/header-logo.png"
+            alt="Logo"
+            />
+          </div>
+
+          <div class="input">
+            <input type="text">
+          </div>
+
+          <!-- <div>
+            <img
+            class="cursor"
+            src="assets/imgMobile/search.svg"
+            alt="Search Icon"
+            />
+          </div> -->
+          <div class='tabl-but'><button>Sign In</button></div>
+          <div class='tabl-but'>Join</div>
+        </div>
+        </div>
+
+        <div class="search-goodreads-sign-up-m tablet">
           <div>
             <img
               class="cursor"
@@ -35,7 +62,7 @@
 
       <nav class="navbar-m mobile">
         <div class="navbar-cont">
-          <div class="tablet">Home</div>
+          <div class="only-tablet">Home</div>
           <div>My Books</div>
           <div>Browse ▾</div>
           <div>Community ▾</div>
@@ -206,9 +233,12 @@
               type="text"
             />
           </div>
+          <div class="mobile playstore-cont">
+            <img class="playstore-img" src="assets/imgMobile/play.png" />
+          </div>
           <section class="mobile images-and-lists-m">
             <div>
-              <div>MOST READ THIS WEEK</div>
+              <div class="mob-img-head">MOST READ THIS WEEK</div>
               <div class="images-most-read-m mobile">
                 <div>
                   <img src="assets/imgMobile/book1.jpg" alt="A book cover" />
@@ -229,7 +259,7 @@
             </div>
             <div>
               <div>
-                <div>NEW RELEASES THIS MONTH</div>
+                <div class="mob-img-head">NEW RELEASES THIS MONTH</div>
                 <div class="images-most-read-m mobile">
                   <div>
                     <img src="assets/imgMobile/book1.jpg" alt="A book cover" />
@@ -249,7 +279,7 @@
                 </div>
               </div>
               <div>
-                <div>LISTS</div>
+                <div class="mob-img-head">LISTS</div>
                 <div class="images-most-read-m mobile">
                   <div>
                     <img src="assets/imgMobile/book1.jpg" alt="A book cover" />
@@ -268,6 +298,15 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="mobile best-book-20">
+              <div class="best-b-1">
+                <div>Best Books of 20th Century</div>
+                <div>
+                  <img src="assets/images/ic_mw_right_arrow.png" alt="Arrow" />
+                </div>
+              </div>
+              <div class="best-b-2">7,774 books</div>
             </div>
             <ul class="mobile list-best-books-m">
               <li>
@@ -327,7 +366,7 @@
 
         <section class="mobile genres-m">
           <div genres-header-m>
-            <div>Genres</div>
+            <div class="mob-img-head2">GENRES</div>
           </div>
           <div>
             <ul>
@@ -348,7 +387,7 @@
         <!-- Quotes Section -->
 
         <section class="quotes">
-          <div>Quotes</div>
+          <div class="mob-img-head2">Quotes</div>
           <div class="quotes-container">
             <div class="quote-container">
               <div>
